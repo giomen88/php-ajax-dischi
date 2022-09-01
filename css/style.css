@@ -1,0 +1,37 @@
+/* colors */
+:root {
+--bg-primary: #1E2D3B;
+--bg-secondary: #2E3A46;
+--text-secondary: #808080;
+}
+
+body {
+    background-color: var(--bg-primary);
+    font-family: sans-serif;
+}
+
+header {
+    background-color: var(--bg-secondary);
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}  
+
+header img {
+    width: 50px;
+}
+
+.disc-card {
+    margin: 10px;
+    width: calc(20% - 20px);
+    min-height: 460px;
+    background-color: var(--bg-secondary);
+    text-align: center;
+    color: white;
+}
+
+.disc-card h4, .disc-card p {
+    color: var(--text-secondary);
+}
