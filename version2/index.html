@@ -9,37 +9,37 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap-grid.min.css' integrity='sha512-8zKdCtHHn4yrmrAKteDmaIVUMppsWMTlaZCffpRG6k6sVHwWQ2kiJOFQ22e7dSPc7yYD/GC5onkJCfxemQsyeQ==' crossorigin='anonymous'/>
     <!-- css -->
     <link rel="stylesheet" href="../css/style.css"> 
-    <!-- vue -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.38/vue.cjs.min.js' integrity='sha512-6B3X7ZmeLyv4mv37HvNQX+/iVFlAMj2h4/Cqp/Rs05gO0vQ8GGxbh3voL3oJNSqaB5Z7zOBZgDHy2wLyw8TCBA==' crossorigin='anonymous'></script>
+    <!-- vuejs -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.10/dist/vue.js"></script>
     <!-- axios -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js' integrity='sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==' crossorigin='anonymous'></script>
 </head>
 <body>
     <div id="root">
-    <main>
-        <div
-        class="
-            container
-            py-5
-            d-flex
-            justify-content-center
-            align-items-center
-            flex-wrap
-        "
-        >
+        <main>
             <div
-            class="disc-card d-flex flex-column justify-content-between p-4"
-            v-for="disc in discs" :key="disc.title"
+            class="
+                container
+                py-5
+                d-flex
+                justify-content-center
+                align-items-center
+                flex-wrap
+            "
             >
-                <img :src="disc.poster" :alt="disc.title" class="img-fluid mb-3" />
-                <h3>{{disc.title}}</h3>
-                <h4 class="text-secondary fs-4">{{disc.author}}</h4>
-                <p class="text-secondary fs-5">{{disc.year}}</p>
-            </div>
+                <div
+                class="disc-card d-flex flex-column justify-content-between p-4"
+                v-for="disc in discs" :key="disc.title"
+                >
+                    <img :src="disc.poster" :alt="disc.title" class="img-fluid mb-3" />
+                    <h3>{{disc.title}}</h3>
+                    <h4 class="text-secondary fs-4">{{disc.author}}</h4>
+                    <p class="text-secondary fs-5">{{disc.year}}</p>
+                </div>
 
-        </div>
-    </main>
-</div>
+            </div>
+        </main>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
